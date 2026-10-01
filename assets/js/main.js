@@ -91,6 +91,24 @@
   /* hero board KPIs: count up after the board animates in */
   setTimeout(function () { document.querySelectorAll('.board [data-count]').forEach(countUp); }, reduce ? 0 : 900);
 
+  /* ---------- timeline filter ---------- */
+  var fbtns = document.querySelectorAll('.tl-filter button');
+  var tlItems = document.querySelectorAll('.tl');
+  fbtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var f = btn.getAttribute('data-filter');
+      fbtns.forEach(function (b) { var on = b === btn; b.classList.toggle('is-on', on); b.setAttribute('aria-pressed', String(on)); });
+      tlItems.forEach(function (li) {
+        var show = f === '전체' || li.getAttribute('data-type') === f;
+        li.hidden = !show;
+        li.classList.add('in');
+        li.classList.remove('show');
+        if (show && !reduce) { void li.offsetWidth; li.classList.add('show'); }
+      });
+      onScroll();
+    });
+  });
+
   /* ---------- hero rotator ---------- */
   var rot = document.querySelector('.rotator');
   if (rot && !reduce) {
