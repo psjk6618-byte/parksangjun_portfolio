@@ -358,7 +358,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
 .level-type { font-size: 13.5px; color: var(--muted); font-weight: 500; margin-left: 8px; }
 .level-pct { font-weight: 700; color: var(--blue); font-variant-numeric: tabular-nums; font-size: 15px; }
 .level-bar { grid-column: 1 / -1; height: 6px; border-radius: 99px; background: var(--blue-soft); overflow: hidden; }
-.level-bar i { display: block; height: 100%; width: var(--p); background: linear-gradient(90deg, #8FA6FF, var(--blue)); border-radius: inherit; transform-origin: 0 50%; }
+.level-bar i { display: block; height: 100%; width: var(--p); background: linear-gradient(90deg, #8FA6FF, var(--blue)); border-radius: inherit; }
 .extra-tools { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 8px; }
 .chip { font-size: 14px; font-weight: 600; background: #fff; box-shadow: 0 0 0 1px var(--line); padding: 7px 14px; border-radius: 999px; }
 
@@ -453,8 +453,6 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
   .reveal-ready [data-reveal].in { opacity: 1; transform: none; }
   .reveal-ready .path { --draw: 0; }
   .reveal-ready .path.in { --draw: 1; }
-  .reveal-ready .level-bar i { transform: scaleX(0); transition: transform 1.2s var(--ease); transition-delay: var(--d, 0s); }
-  .reveal-ready .levels.in .level-bar i { transform: scaleX(1); }
   .reveal-ready .res, .reveal-ready .num { border-top-color: transparent; position: relative; }
   .reveal-ready .res::before, .reveal-ready .num::before { content: ""; position: absolute; left: 0; top: -2px; height: 2px; width: 100%; background: var(--blue); transform: scaleX(0); transform-origin: 0 50%; transition: transform 1s var(--ease); transition-delay: var(--d, 0s); }
   .reveal-ready .num::before { background: var(--ink); }

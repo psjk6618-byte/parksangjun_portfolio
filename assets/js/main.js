@@ -72,7 +72,7 @@
   }
 
   /* ---------- scroll reveal ---------- */
-  var revealEls = document.querySelectorAll('[data-reveal], .path, .levels');
+  var revealEls = document.querySelectorAll('[data-reveal], .path');
   if (!reduce && 'IntersectionObserver' in window) {
     root.classList.add('reveal-ready');
     var io = new IntersectionObserver(function (entries) {
