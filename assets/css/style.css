@@ -364,8 +364,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
 
 /* timeline */
 .timeline { position: relative; }
-.timeline::before { content: ""; position: absolute; left: 180px; top: 10px; bottom: 10px; width: 2px; background: var(--line); }
-.timeline::after { content: ""; position: absolute; left: 180px; top: 10px; width: 2px; height: calc(var(--tl, 0) * (100% - 20px)); background: var(--blue); }
+.timeline::before { content: ""; position: absolute; left: 180px; top: 10px; bottom: 10px; width: 2px; background: #D3DBF7; }
 .tl { display: grid; grid-template-columns: 180px 1fr; gap: 48px; padding-bottom: 48px; position: relative; }
 .tl:last-child { padding-bottom: 0; }
 .tl::before { content: ""; position: absolute; left: 174px; top: 8px; width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 3px solid var(--blue); z-index: 1; }
@@ -534,8 +533,7 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
   .toc-arrow { grid-column: 3; grid-row: 1 / span 2; }
   .award { grid-template-columns: 1fr; padding: 32px 26px; gap: 20px; }
   .award-obj { width: 104px; }
-  .timeline::before, .timeline::after { left: 6px; }
-  .tl { grid-template-columns: 1fr; gap: 4px; padding-left: 34px; }
+  .timeline::before,   .tl { grid-template-columns: 1fr; gap: 4px; padding-left: 34px; }
   .tl::before { left: 0; }
   .row { grid-template-columns: 1fr; }
   .cloud.c3 { display: none; }
@@ -625,8 +623,8 @@ tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
 .tl-tag { flex: none; font-size: 12.5px; font-weight: 800; padding: 4px 10px; border-radius: 8px; letter-spacing: -.01em; }
 .t-career { background: var(--blue); color: #fff; }
 .t-project { background: var(--blue-soft); color: var(--blue-deep); }
-.t-contest { background: #FFF2C2; color: #7A5B00; }
-.t-personal { background: #E3F6EE; color: #13795A; }
+.t-contest { background: var(--blue-soft); color: var(--blue-deep); }
+.t-personal { background: var(--blue-soft); color: var(--blue-deep); }
 .tl.show { animation: open .5s var(--ease); }
 @media (max-width: 640px) {
   .tl-filter { flex-wrap: nowrap; overflow-x: auto; margin-inline: -20px; padding: 2px 20px 8px; scrollbar-width: none; }

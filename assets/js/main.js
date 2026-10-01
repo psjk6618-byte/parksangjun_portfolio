@@ -7,7 +7,6 @@
   var toggle = document.querySelector('.menu-toggle');
   var progress = document.querySelector('.progress');
   var toTop = document.querySelector('.to-top');
-  var timeline = document.querySelector('.timeline');
 
   /* ---------- scroll-linked: header, progress, to-top, timeline ---------- */
   var ticking = false;
@@ -17,11 +16,6 @@
     header.classList.toggle('is-scrolled', y > 8);
     progress.style.setProperty('--p', max > 0 ? (y / max).toFixed(4) : 0);
     toTop.classList.toggle('show', y > window.innerHeight * 1.2);
-    if (timeline) {
-      var r = timeline.getBoundingClientRect();
-      var t = (window.innerHeight * 0.7 - r.top) / r.height;
-      timeline.style.setProperty('--tl', Math.max(0, Math.min(1, t)).toFixed(3));
-    }
     ticking = false;
   }
   window.addEventListener('scroll', function () { if (!ticking) { requestAnimationFrame(onScroll); ticking = true; } }, { passive: true });
