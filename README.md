@@ -8,7 +8,7 @@ index.html                         메인 페이지
 assets/css/style.css               스타일
 assets/js/main.js                  메뉴·복사 기능
 assets/img/*.svg                   오브젝트 일러스트 (직접 제작한 SVG)
-assets/files/ParkSangjun_Portfolio_2026.pdf   다운로드용 포트폴리오
+assets/files/ParkSangjun_Portfolio_261106_V3.pdf   다운로드용 포트폴리오
 .nojekyll                          GitHub Pages가 파일을 그대로 쓰도록 하는 설정
 ```
 
@@ -21,6 +21,6 @@ assets/files/ParkSangjun_Portfolio_2026.pdf   다운로드용 포트폴리오
 4. 1~2분 뒤 표시되는 주소로 접속합니다.
 
 ## 수정 팁
-- 포트폴리오 PDF를 바꿀 때는 `assets/files/ParkSangjun_Portfolio_2026.pdf`를 같은 이름으로 덮어쓰면 됩니다.
-- 다운로드 파일 이름은 `index.html`의 `download="박상준_포트폴리오_2026.pdf"` 부분에서 바꿉니다.
+- 포트폴리오 PDF를 바꿀 때는 `assets/files/ParkSangjun_Portfolio_261106_V3.pdf`를 같은 이름으로 덮어쓰면 됩니다.
+- 다운로드 파일 이름은 `index.html`의 `download="박상준_포트폴리오_261106_V3.pdf"` 부분에서 바꿉니다.
 - 글꼴은 Pretendard(CDN)를 씁니다. 인터넷이 막힌 환경에서는 시스템 글꼴로 대체됩니다.
